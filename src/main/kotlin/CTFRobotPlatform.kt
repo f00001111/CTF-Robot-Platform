@@ -16,4 +16,8 @@ info("""机器人的CTF平台""")
     override fun onEnable() {
         logger.info { "Plugin loaded" }
     }
+
+    override fun onDisable() {
+        logger.info { "Plugin unloaded" }
+    }
 }
